@@ -1,807 +1,774 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliance Loss Calculator - WorkMerate</title>
-    <link rel="stylesheet" href="compliance-calculator.css">
-    <link rel="stylesheet" href="shared-nav-footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance Loss Calculator - WorkMerate</title>
+  <link rel="stylesheet" href="compliance-calculator.css">
+  <link rel="stylesheet" href="shared-nav-footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav class="navbar navbar--index">
-      <div class="container nav-wrapper">
-        <a href="index.html" class="logo">
-          <img src="./assets/brand-logo.png" alt="brand-logo" />
-        </a>
+  <nav class="navbar navbar--index">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="./assets/brand-logo.png" alt="brand-logo" />
+      </a>
 
-        <ul class="nav-menu desktop-only">
-          <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
-          <li class="nav-item has-dropdown">
-            <a href="services.html" class="nav-link" aria-haspopup="true">
-              Services
-              <svg
-                class="chevron"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
-            <div class="dropdown mega-dropdown">
-              <div class="mega-grid">
-                <div class="mega-list">
-                  <a class="mega-item" href="services.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Automation &amp; Compliance</span>
-                        <span class="mega-subtitle">Primary systems and automation layer</span>
-                      </span>
+      <ul class="nav-menu desktop-only">
+        <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link" aria-haspopup="true">
+            Services
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown mega-dropdown">
+            <div class="mega-grid">
+              <div class="mega-list">
+                <a class="mega-item" href="services.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Automation &amp; Compliance</span>
+                      <span class="mega-subtitle">Primary systems and automation layer</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="ar-reporting.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Audit &amp; Regulatory Reporting</span>
+                      <span class="mega-subtitle">Assurance and statutory services</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="ar-reporting.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Audit &amp; Regulatory Reporting</span>
-                        <span class="mega-subtitle">Assurance and statutory services</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="regulatory-engagement.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Regulatory Engagement</span>
+                      <span class="mega-subtitle">Onboarding, certifications, and liaison</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="advanced-intelligence.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Advanced Intelligence</span>
+                      <span class="mega-subtitle">AI, insights, and continuous monitoring</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="regulatory-engagement.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Regulatory Engagement</span>
-                        <span class="mega-subtitle">Onboarding, certifications, and liaison</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="erp-pos.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">ERP &amp; POS Integrations</span>
+                      <span class="mega-subtitle">Platform and infrastructure services</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="ar-advisory.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Advisory &amp; Risk</span>
+                      <span class="mega-subtitle">Strategy, planning, and risk management</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="advanced-intelligence.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Advanced Intelligence</span>
-                        <span class="mega-subtitle">AI, insights, and continuous monitoring</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="managed.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Managed Services</span>
+                      <span class="mega-subtitle">Ongoing operations and capacity support</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-list">
-                  <a class="mega-item" href="erp-pos.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">ERP &amp; POS Integrations</span>
-                        <span class="mega-subtitle">Platform and infrastructure services</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="ar-advisory.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Advisory &amp; Risk</span>
-                        <span class="mega-subtitle">Strategy, planning, and risk management</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="managed.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Managed Services</span>
-                        <span class="mega-subtitle">Ongoing operations and capacity support</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-card">
-                  <div class="mega-card-visual"></div>
-                  <p class="mega-card-title">Need the perfect service? We can help!</p>
-                  <a class="mega-card-btn" href="#">Talk to an Expert</a>
-                </div>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-card">
+                <div class="mega-card-visual"></div>
+                <p class="mega-card-title">Need the perfect service? We can help!</p>
+                <a class="mega-card-btn" href="#">Talk to an Expert</a>
               </div>
             </div>
-          </li>
-          <li class="nav-item has-dropdown">
-            <a href="custom-modules.html" class="nav-link" aria-haspopup="true">
-              Modules
-              <svg
-                class="chevron"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
-            <div class="dropdown mega-dropdown">
-              <div class="mega-grid">
-                <div class="mega-list">
-                  <a class="mega-item" href="hr.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Human Resources Management</span>
-                        <span class="mega-subtitle">Empower your workforce from one system</span>
-                      </span>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="custom-modules.html" class="nav-link" aria-haspopup="true">
+            Modules
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown mega-dropdown">
+            <div class="mega-grid">
+              <div class="mega-list">
+                <a class="mega-item" href="hr.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Human Resources Management</span>
+                      <span class="mega-subtitle">Empower your workforce from one system</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="#">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Marketing Automation</span>
+                      <span class="mega-subtitle">Transform interactions into growth</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="#">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Marketing Automation</span>
-                        <span class="mega-subtitle">Transform interactions into growth</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="project-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Project Management</span>
+                      <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="sc-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Supply Chain Management</span>
+                      <span class="mega-subtitle">Streamline operations from start to finish</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="project-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Project Management</span>
-                        <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="financial-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Financial Management</span>
+                      <span class="mega-subtitle">Gain financial control and visibility</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="tax-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Management</span>
+                      <span class="mega-subtitle">Simple automated tax management</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="sc-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Supply Chain Management</span>
-                        <span class="mega-subtitle">Streamline operations from start to finish</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="productivity-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Productivity Management</span>
+                      <span class="mega-subtitle">Empower teams to collaborate better</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="custom-modules.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Custom Module Development</span>
+                      <span class="mega-subtitle">We provide tailored modules for your sector.</span>
                     </span>
-                  </a>
-                </div>
-                <div class="mega-list">
-                  <a class="mega-item" href="financial-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Financial Management</span>
-                        <span class="mega-subtitle">Gain financial control and visibility</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="tax-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Management</span>
-                        <span class="mega-subtitle">Simple automated tax management</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="productivity-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Productivity Management</span>
-                        <span class="mega-subtitle">Empower teams to collaborate better</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="custom-modules.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Custom Module Development</span>
-                        <span class="mega-subtitle">We provide tailored modules for your sector.</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-card">
-                  <div class="mega-card-visual"></div>
-                  <p class="mega-card-title">Want to see these modules in action?</p>
-                  <a class="mega-card-btn" href="#">Book a Demo</a>
-                </div>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-card">
+                <div class="mega-card-visual"></div>
+                <p class="mega-card-title">Want to see these modules in action?</p>
+                <a class="mega-card-btn" href="#">Book a Demo</a>
               </div>
             </div>
-          </li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li class="nav-item has-dropdown">
-            <a href="learning.html" class="nav-link" aria-haspopup="true">
-              Resources
-              <svg
-                class="chevron"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
-            <div class="dropdown mega-dropdown">
-              <div class="mega-grid">
-                <div class="mega-list">
-                  <a class="mega-item" href="compliance-calculator.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Compliance Loss Calculator</span>
-                        <span class="mega-subtitle">Estimate loss from tax gaps.</span>
-                      </span>
+          </div>
+        </li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link active" aria-haspopup="true">
+            Resources
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown mega-dropdown">
+            <div class="mega-grid">
+              <div class="mega-list">
+                <a class="mega-item" href="compliance-calculator.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Compliance Loss Calculator</span>
+                      <span class="mega-subtitle">Estimate loss from tax gaps.</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="tax-calendar.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Calendar</span>
+                      <span class="mega-subtitle">Transform interactions into growth</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="tax-calendar.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Calendar</span>
-                        <span class="mega-subtitle">Transform interactions into growth</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="learning.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Learning</span>
+                      <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="tax-laws.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Laws</span>
+                      <span class="mega-subtitle">Learn Nigeria's tax system.</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="learning.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Learning</span>
-                        <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="state-irs.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">State IRS</span>
+                      <span class="mega-subtitle">Find State Tax Authorities</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-list">
-                  <a class="mega-item" href="tax-laws.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Laws</span>
-                        <span class="mega-subtitle">Learn Nigeria's tax system.</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="state-irs.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">State IRS</span>
-                        <span class="mega-subtitle">Find State Tax Authorities</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-card">
-                  <div class="mega-card-visual"></div>
-                  <p class="mega-card-title">Need more information?</p>
-                  <a class="mega-card-btn" href="contact-us.html">Contact Us</a>
-                </div>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-card">
+                <div class="mega-card-visual"></div>
+                <p class="mega-card-title">Need more information?</p>
+                <a class="mega-card-btn" href="contact-us.html">Contact Us</a>
               </div>
             </div>
-          </li>
-          <li><a href="about.html" class="nav-link">About us</a></li>
-        </ul>
+          </div>
+        </li>
+        <li><a href="about.html" class="nav-link">About us</a></li>
+      </ul>
 
-        <div class="nav-actions desktop-only">
+      <div class="nav-actions desktop-only">
+        <a href="#" class="login-link">Login</a>
+        <a href="#" class="btn-nav">Try it Free</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-panel mobile-panel-main is-active" id="mobileMainPanel">
+        <a href="agentic-ai.html" class="mobile-link">Agentic AI</a>
+        <button class="mobile-link mobile-trigger" type="button" data-panel="servicesPanel">
+          Services <span class="mobile-arrow">→</span>
+        </button>
+        <button class="mobile-link mobile-trigger" type="button" data-panel="modulesPanel">
+          Modules <span class="mobile-arrow">→</span>
+        </button>
+        <a href="pricing.html" class="mobile-link">Pricing</a>
+        <button class="mobile-link mobile-trigger" type="button" data-panel="resourcesPanel">
+          Resources <span class="mobile-arrow">→</span>
+        </button>
+        <a href="about.html" class="mobile-link">About us</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
           <a href="#" class="login-link">Login</a>
-          <a href="#" class="btn-nav">Try it Free</a>
-        </div>
-
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
         </div>
       </div>
 
-      <div class="mobile-menu" id="mobileMenu">
-        <div
-          class="mobile-panel mobile-panel-main is-active"
-          id="mobileMainPanel"
-        >
-          <a href="agentic-ai.html" class="mobile-link">Agentic AI</a>
-          <button
-            class="mobile-link mobile-trigger"
-            type="button"
-            data-panel="servicesPanel"
-          >
-            Services <span class="mobile-arrow">→</span>
-          </button>
-          <button
-            class="mobile-link mobile-trigger"
-            type="button"
-            data-panel="modulesPanel"
-          >
-            Modules <span class="mobile-arrow">→</span>
-          </button>
-          <a href="pricing.html" class="mobile-link">Pricing</a>
-          <button
-            class="mobile-link mobile-trigger"
-            type="button"
-            data-panel="resourcesPanel"
-          >
-            Resources <span class="mobile-arrow">→</span>
-          </button>
-          <a href="about.html" class="mobile-link">About us</a>
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
+      <div class="mobile-panel" id="servicesPanel">
+        <div class="mobile-subheader">
+          <button class="mobile-back" type="button" data-back>←</button>
+          <span>Services</span>
         </div>
-
-        <div class="mobile-panel" id="servicesPanel">
-          <div class="mobile-subheader">
-            <button class="mobile-back" type="button" data-back>←</button>
-            <span>Services</span>
-          </div>
-          <a href="services.html" class="mobile-sublink"
-            >Tax Automation &amp; Compliance</a
-          >
-          <a href="erp-pos.html" class="mobile-sublink"
-            >ERP &amp; POS Integrations</a
-          >
-          <a href="ar-reporting.html" class="mobile-sublink"
-            >Audit &amp; Regulatory Reporting</a
-          >
-          <a href="ar-advisory.html" class="mobile-sublink"
-            >Advisory &amp; Risk</a
-          >
-          <a href="regulatory-engagement.html" class="mobile-sublink"
-            >Regulatory Engagement</a
-          >
-          <a href="managed.html" class="mobile-sublink active"
-            >Managed Services</a
-          >
-          <a href="advanced-intelligence.html" class="mobile-sublink"
-            >Advanced Intelligence</a
-          >
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
-        </div>
-
-        <div class="mobile-panel" id="modulesPanel">
-          <div class="mobile-subheader">
-            <button class="mobile-back" type="button" data-back>←</button>
-            <span>Modules</span>
-          </div>
-          <a href="hr.html" class="mobile-sublink"
-            >Human Resources Management</a
-          >
-          <a href="financial-management.html" class="mobile-sublink"
-            >Financial Management</a
-          >
-          <a href="#" class="mobile-sublink">Marketing Automation</a>
-          <a href="tax-management.html" class="mobile-sublink"
-            >Tax Management</a
-          >
-          <a href="project-management.html" class="mobile-sublink"
-            >Project Management</a
-          >
-          <a href="productivity-management.html" class="mobile-sublink"
-            >Productivity Management</a
-          >
-          <a href="sc-management.html" class="mobile-sublink"
-            >Supply Chain Management</a
-          >
-          <a href="custom-modules.html" class="mobile-sublink"
-            >Custom Module Development</a
-          >
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
-        </div>
-
-        <div class="mobile-panel" id="resourcesPanel">
-          <div class="mobile-subheader">
-            <button class="mobile-back" type="button" data-back>←</button>
-            <span>Resources</span>
-          </div>
-          <a href="compliance-calculator.html" class="mobile-sublink"
-            >Compliance Loss Calculator</a
-          >
-          <a href="tax-laws.html" class="mobile-sublink">Tax Laws</a>
-          <a href="tax-calendar.html" class="mobile-sublink">Tax Calendar</a>
-          <a href="state-irs.html" class="mobile-sublink">State IRS</a>
-          <a href="learning.html" class="mobile-sublink">Learning</a>
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
+        <a href="services.html" class="mobile-sublink">Tax Automation &amp; Compliance</a>
+        <a href="erp-pos.html" class="mobile-sublink">ERP &amp; POS Integrations</a>
+        <a href="ar-reporting.html" class="mobile-sublink">Audit &amp; Regulatory Reporting</a>
+        <a href="ar-advisory.html" class="mobile-sublink">Advisory &amp; Risk</a>
+        <a href="regulatory-engagement.html" class="mobile-sublink">Regulatory Engagement</a>
+        <a href="managed.html" class="mobile-sublink active">Managed Services</a>
+        <a href="advanced-intelligence.html" class="mobile-sublink">Advanced Intelligence</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
+          <a href="#" class="login-link">Login</a>
         </div>
       </div>
-    </nav>
 
-    <section class="calculator-hero">
-        <div class="container calc-layout">
-            
-            <div class="calc-text">
-                <div class="breadcrumbs">
-                    <span class="crumb-gray">Resources</span>
-                    <svg class="crumb-arrow" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-                    <span class="crumb-current">Compliance Loss Calculator</span>
-                </div>
-                
-                <h1>Estimate Your Compliance Loss in Naira</h1>
-                <p class="hero-description">
-                    Quickly calculate the potential financial loss your business may be exposed to due to tax gaps, manual operations, and weak internal controls.
-                </p>
-
-                <ul class="feature-bullets">
-                    <li>
-                        <div class="bullet-icon"><div class="inner-dot"></div></div>
-                        <span>Designed for Nigerian businesses</span>
-                    </li>
-                    <li>
-                        <div class="bullet-icon"><div class="inner-dot"></div></div>
-                        <span>No sensitive financial data required</span>
-                    </li>
-                    <li>
-                        <div class="bullet-icon"><div class="inner-dot"></div></div>
-                        <span>Industry-specific risk assessment</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="calc-card">
-                <div class="calc-header">
-                    <div class="header-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line><line x1="8" y1="14" x2="8" y2="14"></line><line x1="16" y1="14" x2="16" y2="14"></line><line x1="12" y1="14" x2="12" y2="14"></line><line x1="8" y1="10" x2="8" y2="10"></line><line x1="16" y1="10" x2="16" y2="10"></line><line x1="12" y1="10" x2="12" y2="10"></line><line x1="8" y1="6" x2="16" y2="6"></line></svg></div>
-                    <div class="header-text">
-                        <h3>Calculate Your Compliance Loss</h3>
-                        <p>Enter details to generate compliance loss analysis.</p>
-                    </div>
-                </div>
-
-                <div class="form-scroll-area">
-                    <div class="form-section">
-                        <div class="section-label">
-                            <div class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"></path></svg></div>
-                            <div>
-                                <h4>Company Information</h4>
-                                <p>Basic details about your organization</p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <select>
-                                <option selected disabled>Industry</option>
-                                <option>Manufacturing</option>
-                                <option>Retail</option>
-                                <option>Services</option>
-                                <option>Oil & Gas</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="number" placeholder="Number of Employees">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Annual Turnover (₦)">
-                        </div>
-                    </div>
-
-                    <div class="form-section">
-                        <div class="section-label">
-                            <div class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
-                            <div>
-                                <h4>Financial Exposure</h4>
-                                <p>These figures help estimate operational inefficiencies</p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Average Monthly Salary (₦)">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Inventory Value (₦)">
-                        </div>
-                    </div>
-
-                    <div class="form-section">
-                        <div class="section-label">
-                            <div class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
-                            <div>
-                                <h4>Operational Processes</h4>
-                                <p>Select options that reflect your current setup</p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <select>
-                                <option selected disabled>Invoicing & Sales Process</option>
-                                <option>Manual (Paper/Excel)</option>
-                                <option>Semi-Automated</option>
-                                <option>Fully Automated</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <button class="btn-calculate">Calculate Loss</button>
-                </div>
-            </div>
-
+      <div class="mobile-panel" id="modulesPanel">
+        <div class="mobile-subheader">
+          <button class="mobile-back" type="button" data-back>←</button>
+          <span>Modules</span>
         </div>
-    </section>
+        <a href="hr.html" class="mobile-sublink">Human Resources Management</a>
+        <a href="financial-management.html" class="mobile-sublink">Financial Management</a>
+        <a href="#" class="mobile-sublink">Marketing Automation</a>
+        <a href="tax-management.html" class="mobile-sublink">Tax Management</a>
+        <a href="project-management.html" class="mobile-sublink">Project Management</a>
+        <a href="productivity-management.html" class="mobile-sublink">Productivity Management</a>
+        <a href="sc-management.html" class="mobile-sublink">Supply Chain Management</a>
+        <a href="custom-modules.html" class="mobile-sublink">Custom Module Development</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
+          <a href="#" class="login-link">Login</a>
+        </div>
+      </div>
 
-    <footer class="footer-section">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <a href="index.html" class="logo">
-              <img src="./assets/brand-logo.png" alt="brand-logo" />
-            </a>
-            <p class="tagline">Smart. Secure. Simplified.</p>
-            <div class="contact-details">
-              <p>
-                <strong>USA Customer Support:</strong><br />(+1) 256 441 3090
-              </p>
-              <p>
-                <strong>NGA Customer Support:</strong><br />(+234) 907 713 7167
-              </p>
-              <p><strong>Email:</strong><br />support@workmerate.ng.com</p>
+      <div class="mobile-panel" id="resourcesPanel">
+        <div class="mobile-subheader">
+          <button class="mobile-back" type="button" data-back>←</button>
+          <span>Resources</span>
+        </div>
+        <a href="compliance-calculator.html" class="mobile-sublink">Compliance Loss Calculator</a>
+        <a href="tax-laws.html" class="mobile-sublink">Tax Laws</a>
+        <a href="tax-calendar.html" class="mobile-sublink">Tax Calendar</a>
+        <a href="state-irs.html" class="mobile-sublink">State IRS</a>
+        <a href="learning.html" class="mobile-sublink">Learning</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
+          <a href="#" class="login-link">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="calculator-hero">
+    <div class="container calc-layout">
+
+      <div class="calc-text">
+        <div class="breadcrumbs">
+          <span class="crumb-gray">Resources</span>
+          <svg class="crumb-arrow" viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          </svg>
+          <span class="crumb-current">Compliance Loss Calculator</span>
+        </div>
+
+        <h1>Estimate Your Compliance Loss in Naira</h1>
+        <p class="hero-description">
+          Quickly calculate the potential financial loss your business may be exposed to due to tax gaps, manual
+          operations, and weak internal controls.
+        </p>
+
+        <ul class="feature-bullets">
+          <li>
+            <div class="bullet-icon">
+              <div class="inner-dot"></div>
             </div>
-            <div class="footer-socials" aria-label="Social links">
-              <a href="#" class="social-icon" aria-label="Facebook">f</a>
-              <a href="#" class="social-icon" aria-label="X">x</a>
-              <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
-              <a href="#" class="social-icon" aria-label="Instagram">ig</a>
-              <a href="#" class="social-icon" aria-label="TikTok">t</a>
+            <span>Designed for Nigerian businesses</span>
+          </li>
+          <li>
+            <div class="bullet-icon">
+              <div class="inner-dot"></div>
             </div>
-          </div>
-          <div class="footer-links-grid">
-            <div>
-              <h4>Services</h4>
-              <ul>
-                <li><a href="services.html">Tax Automation</a></li>
-                <li><a href="erp-pos.html">ERP Integration</a></li>
-                <li><a href="ar-reporting.html">Regulatory Reporting</a></li>
-                <li><a href="ar-advisory.html">Advisory &amp; Strategy</a></li>
-                <li>
-                  <a href="regulatory-engagement.html">Regulatory Engagement</a>
-                </li>
-                <li><a href="agentic-ai.html">Agentic AI</a></li>
-              </ul>
+            <span>No sensitive financial data required</span>
+          </li>
+          <li>
+            <div class="bullet-icon">
+              <div class="inner-dot"></div>
             </div>
-            <div>
-              <h4>Modules</h4>
-              <ul>
-                <li><a href="hr.html">Human Resources</a></li>
-                <li>
-                  <a href="financial-management.html">Financial Management</a>
-                </li>
-                <li><a href="tax-management.html">Tax Management</a></li>
-                <li><a href="#">Marketing Automation</a></li>
-                <li>
-                  <a href="project-management.html">Project Management</a>
-                </li>
-                <li><a href="productivity-management.html">Productivity</a></li>
-                <li><a href="sc-management.html">Supply Chain</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Resources</h4>
-              <ul>
-                <li>
-                  <a href="compliance-calculator.html"
-                    >Compliance Loss Calculator</a
-                  >
-                </li>
-                <li><a href="state-irs.html">State IRS</a></li>
-                <li><a href="tax-laws.html">Tax Laws</a></li>
-                <li><a href="tax-calendar.html">Tax Calendar</a></li>
-                <li><a href="learning.html">Learning</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Other Links</h4>
-              <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li>
-                  <a href="terms-and-condition.html">Terms and Conditions</a>
-                </li>
-                <li><a href="cookie-policy.html">Cookies Policy</a></li>
-              </ul>
-            </div>
+            <span>Industry-specific risk assessment</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-header">
+          <div class="header-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="12" y1="18" x2="12" y2="18"></line>
+              <line x1="8" y1="14" x2="8" y2="14"></line>
+              <line x1="16" y1="14" x2="16" y2="14"></line>
+              <line x1="12" y1="14" x2="12" y2="14"></line>
+              <line x1="8" y1="10" x2="8" y2="10"></line>
+              <line x1="16" y1="10" x2="16" y2="10"></line>
+              <line x1="12" y1="10" x2="12" y2="10"></line>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+            </svg></div>
+          <div class="header-text">
+            <h3>Calculate Your Compliance Loss</h3>
+            <p>Enter details to generate compliance loss analysis.</p>
           </div>
         </div>
-        <hr />
-        <div class="footer-newsletter">
-          <div class="nl-header">
-            <h2>Subscribe to our newsletter</h2>
+
+        <div class="form-scroll-area">
+          <div class="form-section">
+            <div class="section-label">
+              <div class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 21h18v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"></path>
+                </svg></div>
+              <div>
+                <h4>Company Information</h4>
+                <p>Basic details about your organization</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <select>
+                <option selected disabled>Industry</option>
+                <option>Manufacturing</option>
+                <option>Retail</option>
+                <option>Services</option>
+                <option>Oil & Gas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="number" placeholder="Number of Employees">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Annual Turnover (₦)">
+            </div>
           </div>
-          <div class="nl-text">
+
+          <div class="form-section">
+            <div class="section-label">
+              <div class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg></div>
+              <div>
+                <h4>Financial Exposure</h4>
+                <p>These figures help estimate operational inefficiencies</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Average Monthly Salary (₦)">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Inventory Value (₦)">
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-label">
+              <div class="label-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg></div>
+              <div>
+                <h4>Operational Processes</h4>
+                <p>Select options that reflect your current setup</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <select>
+                <option selected disabled>Invoicing & Sales Process</option>
+              </select>
+
+              <select>>
+                <option selected disabled></option>
+              </select>
+
+
+            </div>
+          </div>
+
+          <button class="btn-calculate">Calculate Loss</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="./assets/brand-logo.png" alt="brand-logo" />
+          </a>
+          <p class="tagline">Smart. Secure. Simplified.</p>
+          <div class="contact-details">
             <p>
-              Stay informed with the latest news, updates, and resources from
-              WorkMerate, sent directly to your inbox.
+              <strong>USA Customer Support:</strong><br />(+1) 256 441 3090
             </p>
+            <p>
+              <strong>NGA Customer Support:</strong><br />(+234) 907 713 7167
+            </p>
+            <p><strong>Email:</strong><br />support@workmerate.ng.com</p>
           </div>
-          <div class="nl-form">
-            <input type="email" placeholder="Enter your email" />
-            <button class="btn-dark">Subscribe</button>
+          <div class="footer-socials" aria-label="Social links">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="X">x</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+            <a href="#" class="social-icon" aria-label="TikTok">t</a>
           </div>
         </div>
-        <hr />
-        <div class="footer-bottom">
-          <div class="badges">
-            <p>&copy; 2025 WorkMerate - All rights reserved</p>
-            <div class="brand-logos">
-              <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
-              <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
-              <img src="./assets/brands/occu-health-safety.png" alt="Occupational Health Safety" />
-              <img src="./assets/brands/info-security-manage.png" alt="Information Security Management" />
-              <img src="./assets/brands/NDPC-Nigeria.png" alt="NCPC Nigeria" />
-              <img src="./assets/brands/NITDA.png" alt="National Information Technology Agency" />
-            </div>
+        <div class="footer-links-grid">
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Tax Automation</a></li>
+              <li><a href="erp-pos.html">ERP Integration</a></li>
+              <li><a href="ar-reporting.html">Regulatory Reporting</a></li>
+              <li><a href="ar-advisory.html">Advisory &amp; Strategy</a></li>
+              <li>
+                <a href="regulatory-engagement.html">Regulatory Engagement</a>
+              </li>
+              <li><a href="agentic-ai.html">Agentic AI</a></li>
+            </ul>
           </div>
-          <div class="ai-logo">
-            <img src="./assets/brands/chat-ai.png" alt="">
+          <div>
+            <h4>Modules</h4>
+            <ul>
+              <li><a href="hr.html">Human Resources</a></li>
+              <li>
+                <a href="financial-management.html">Financial Management</a>
+              </li>
+              <li><a href="tax-management.html">Tax Management</a></li>
+              <li><a href="#">Marketing Automation</a></li>
+              <li>
+                <a href="project-management.html">Project Management</a>
+              </li>
+              <li><a href="productivity-management.html">Productivity</a></li>
+              <li><a href="sc-management.html">Supply Chain</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li>
+                <a href="compliance-calculator.html">Compliance Loss Calculator</a>
+              </li>
+              <li><a href="state-irs.html">State IRS</a></li>
+              <li><a href="tax-laws.html">Tax Laws</a></li>
+              <li><a href="tax-calendar.html">Tax Calendar</a></li>
+              <li><a href="learning.html">Learning</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Other Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li>
+                <a href="terms-and-condition.html">Terms and Conditions</a>
+              </li>
+              <li><a href="cookie-policy.html">Cookies Policy</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
+      <hr />
+      <div class="footer-newsletter">
+        <div class="nl-header">
+          <h2>Subscribe to our newsletter</h2>
+        </div>
+        <div class="nl-text">
+          <p>
+            Stay informed with the latest news, updates, and resources from
+            WorkMerate, sent directly to your inbox.
+          </p>
+        </div>
+        <div class="nl-form">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn-dark">Subscribe</button>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="badges">
+          <p>&copy; 2025 WorkMerate - All rights reserved</p>
+          <div class="brand-logos">
+            <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
+            <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
+            <img src="./assets/brands/occu-health-safety.png" alt="Occupational Health Safety" />
+            <img src="./assets/brands/info-security-manage.png" alt="Information Security Management" />
+            <img src="./assets/brands/NDPC-Nigeria.png" alt="NCPC Nigeria" />
+            <img src="./assets/brands/NITDA.png" alt="National Information Technology Agency" />
+          </div>
+        </div>
+        <div class="ai-logo">
+          <img src="./assets/brands/chat-ai.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    
 
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
 
-  const mobilePanels = document.querySelectorAll(".mobile-panel");
-  const mobileMainPanel = document.getElementById("mobileMainPanel");
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-  const setActivePanel = (panelId) => {
-    mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
-    const nextPanel = document.getElementById(panelId);
-    (nextPanel || mobileMainPanel).classList.add("is-active");
-  };
+    const mobilePanels = document.querySelectorAll(".mobile-panel");
+    const mobileMainPanel = document.getElementById("mobileMainPanel");
 
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      mobileMenu.classList.toggle("open");
-      if (!mobileMenu.classList.contains("open")) {
+    const setActivePanel = (panelId) => {
+      mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
+      const nextPanel = document.getElementById(panelId);
+      (nextPanel || mobileMainPanel).classList.add("is-active");
+    };
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("open");
+        if (!mobileMenu.classList.contains("open")) {
+          setActivePanel("mobileMainPanel");
+        }
+      });
+    }
+
+    document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        setActivePanel(trigger.dataset.panel);
+      });
+    });
+
+    document.querySelectorAll("[data-back]").forEach((btn) => {
+      btn.addEventListener("click", () => {
         setActivePanel("mobileMainPanel");
-      }
+      });
     });
-  }
-
-  document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
-    trigger.addEventListener("click", () => {
-      setActivePanel(trigger.dataset.panel);
-    });
-  });
-
-  document.querySelectorAll("[data-back]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      setActivePanel("mobileMainPanel");
-    });
-  });
-</script>
+  </script>
 </body>
+
 </html>
-
-

@@ -1,865 +1,1052 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Laws - WorkMerate</title>
-    <link rel="stylesheet" href="tax-laws.css">
-    <link rel="stylesheet" href="shared-nav-footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Laws - WorkMerate</title>
+  <link rel="stylesheet" href="tax-laws.css">
+  <link rel="stylesheet" href="shared-nav-footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav class="navbar navbar--index">
-      <div class="container nav-wrapper">
-        <a href="index.html" class="logo">
-          <img src="./assets/brand-logo.png" alt="brand-logo" />
-        </a>
+  <nav class="navbar navbar--index">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="./assets/brand-logo.png" alt="brand-logo" />
+      </a>
 
-        <ul class="nav-menu desktop-only">
-          <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
-          <li class="nav-item has-dropdown">
-            <a href="services.html" class="nav-link" aria-haspopup="true">
-              Services
-              <svg
-                class="chevron"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
-            <div class="dropdown mega-dropdown">
-              <div class="mega-grid">
-                <div class="mega-list">
-                  <a class="mega-item" href="services.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Automation &amp; Compliance</span>
-                        <span class="mega-subtitle">Primary systems and automation layer</span>
-                      </span>
+      <ul class="nav-menu desktop-only">
+        <li><a href="agentic-ai.html" class="nav-link">Agentic AI</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="services.html" class="nav-link" aria-haspopup="true">
+            Services
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown mega-dropdown">
+            <div class="mega-grid">
+              <div class="mega-list">
+                <a class="mega-item" href="services.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Automation &amp; Compliance</span>
+                      <span class="mega-subtitle">Primary systems and automation layer</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="ar-reporting.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Audit &amp; Regulatory Reporting</span>
+                      <span class="mega-subtitle">Assurance and statutory services</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="ar-reporting.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Audit &amp; Regulatory Reporting</span>
-                        <span class="mega-subtitle">Assurance and statutory services</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="regulatory-engagement.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Regulatory Engagement</span>
+                      <span class="mega-subtitle">Onboarding, certifications, and liaison</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="advanced-intelligence.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Advanced Intelligence</span>
+                      <span class="mega-subtitle">AI, insights, and continuous monitoring</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="regulatory-engagement.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Regulatory Engagement</span>
-                        <span class="mega-subtitle">Onboarding, certifications, and liaison</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="erp-pos.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">ERP &amp; POS Integrations</span>
+                      <span class="mega-subtitle">Platform and infrastructure services</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="ar-advisory.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Advisory &amp; Risk</span>
+                      <span class="mega-subtitle">Strategy, planning, and risk management</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="advanced-intelligence.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Advanced Intelligence</span>
-                        <span class="mega-subtitle">AI, insights, and continuous monitoring</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="managed.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Managed Services</span>
+                      <span class="mega-subtitle">Ongoing operations and capacity support</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-list">
-                  <a class="mega-item" href="erp-pos.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">ERP &amp; POS Integrations</span>
-                        <span class="mega-subtitle">Platform and infrastructure services</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="ar-advisory.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Advisory &amp; Risk</span>
-                        <span class="mega-subtitle">Strategy, planning, and risk management</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="managed.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Managed Services</span>
-                        <span class="mega-subtitle">Ongoing operations and capacity support</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-card">
-                  <div class="mega-card-visual"></div>
-                  <p class="mega-card-title">Need the perfect service? We can help!</p>
-                  <a class="mega-card-btn" href="#">Talk to an Expert</a>
-                </div>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-card">
+                <div class="mega-card-visual"></div>
+                <p class="mega-card-title">Need the perfect service? We can help!</p>
+                <a class="mega-card-btn" href="#">Talk to an Expert</a>
               </div>
             </div>
-          </li>
-          <li class="nav-item has-dropdown">
-            <a href="custom-modules.html" class="nav-link" aria-haspopup="true">
-              Modules
-              <svg
-                class="chevron"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
-            <div class="dropdown mega-dropdown">
-              <div class="mega-grid">
-                <div class="mega-list">
-                  <a class="mega-item" href="hr.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Human Resources Management</span>
-                        <span class="mega-subtitle">Empower your workforce from one system</span>
-                      </span>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="custom-modules.html" class="nav-link" aria-haspopup="true">
+            Modules
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown mega-dropdown">
+            <div class="mega-grid">
+              <div class="mega-list">
+                <a class="mega-item" href="hr.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Human Resources Management</span>
+                      <span class="mega-subtitle">Empower your workforce from one system</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="#">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Marketing Automation</span>
+                      <span class="mega-subtitle">Transform interactions into growth</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="#">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Marketing Automation</span>
-                        <span class="mega-subtitle">Transform interactions into growth</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="project-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Project Management</span>
+                      <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="sc-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Supply Chain Management</span>
+                      <span class="mega-subtitle">Streamline operations from start to finish</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="project-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Project Management</span>
-                        <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="financial-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Financial Management</span>
+                      <span class="mega-subtitle">Gain financial control and visibility</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="tax-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Management</span>
+                      <span class="mega-subtitle">Simple automated tax management</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="sc-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Supply Chain Management</span>
-                        <span class="mega-subtitle">Streamline operations from start to finish</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="productivity-management.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Productivity Management</span>
+                      <span class="mega-subtitle">Empower teams to collaborate better</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="custom-modules.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Custom Module Development</span>
+                      <span class="mega-subtitle">We provide tailored modules for your sector.</span>
                     </span>
-                  </a>
-                </div>
-                <div class="mega-list">
-                  <a class="mega-item" href="financial-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Financial Management</span>
-                        <span class="mega-subtitle">Gain financial control and visibility</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="tax-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Management</span>
-                        <span class="mega-subtitle">Simple automated tax management</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="productivity-management.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Productivity Management</span>
-                        <span class="mega-subtitle">Empower teams to collaborate better</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="custom-modules.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Custom Module Development</span>
-                        <span class="mega-subtitle">We provide tailored modules for your sector.</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-card">
-                  <div class="mega-card-visual"></div>
-                  <p class="mega-card-title">Want to see these modules in action?</p>
-                  <a class="mega-card-btn" href="#">Book a Demo</a>
-                </div>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-card">
+                <div class="mega-card-visual"></div>
+                <p class="mega-card-title">Want to see these modules in action?</p>
+                <a class="mega-card-btn" href="#">Book a Demo</a>
               </div>
             </div>
-          </li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li class="nav-item has-dropdown">
-            <a href="learning.html" class="nav-link" aria-haspopup="true">
-              Resources
-              <svg
-                class="chevron"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </a>
-            <div class="dropdown mega-dropdown">
-              <div class="mega-grid">
-                <div class="mega-list">
-                  <a class="mega-item" href="compliance-calculator.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Compliance Loss Calculator</span>
-                        <span class="mega-subtitle">Estimate loss from tax gaps.</span>
-                      </span>
+          </div>
+        </li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link active" aria-haspopup="true">
+            Resources
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown mega-dropdown">
+            <div class="mega-grid">
+              <div class="mega-list">
+                <a class="mega-item" href="compliance-calculator.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Compliance Loss Calculator</span>
+                      <span class="mega-subtitle">Estimate loss from tax gaps.</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="tax-calendar.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Calendar</span>
+                      <span class="mega-subtitle">Transform interactions into growth</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="tax-calendar.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Calendar</span>
-                        <span class="mega-subtitle">Transform interactions into growth</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="learning.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Learning</span>
+                      <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-list">
+                <a class="mega-item" href="tax-laws.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">Tax Laws</span>
+                      <span class="mega-subtitle">Learn Nigeria's tax system.</span>
                     </span>
-                  </a>
-                  <a class="mega-item" href="learning.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Learning</span>
-                        <span class="mega-subtitle">Plan smart, execute fast, deliver confidently</span>
-                      </span>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+                <a class="mega-item" href="state-irs.html">
+                  <span class="mega-item-left">
+                    <span class="mega-icon"></span>
+                    <span class="mega-text">
+                      <span class="mega-title">State IRS</span>
+                      <span class="mega-subtitle">Find State Tax Authorities</span>
                     </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-list">
-                  <a class="mega-item" href="tax-laws.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">Tax Laws</span>
-                        <span class="mega-subtitle">Learn Nigeria's tax system.</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                  <a class="mega-item" href="state-irs.html">
-                    <span class="mega-item-left">
-                      <span class="mega-icon"></span>
-                      <span class="mega-text">
-                        <span class="mega-title">State IRS</span>
-                        <span class="mega-subtitle">Find State Tax Authorities</span>
-                      </span>
-                    </span>
-                    <span class="mega-arrow">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="13 6 19 12 13 18"></polyline>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-                <div class="mega-card">
-                  <div class="mega-card-visual"></div>
-                  <p class="mega-card-title">Need more information?</p>
-                  <a class="mega-card-btn" href="contact-us.html">Contact Us</a>
-                </div>
+                  </span>
+                  <span class="mega-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="13 6 19 12 13 18"></polyline>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="mega-card">
+                <div class="mega-card-visual"></div>
+                <p class="mega-card-title">Need more information?</p>
+                <a class="mega-card-btn" href="contact-us.html">Contact Us</a>
               </div>
             </div>
-          </li>
-          <li><a href="about.html" class="nav-link">About us</a></li>
-        </ul>
+          </div>
+        </li>
+        <li><a href="about.html" class="nav-link">About us</a></li>
+      </ul>
 
-        <div class="nav-actions desktop-only">
+      <div class="nav-actions desktop-only">
+        <a href="#" class="login-link">Login</a>
+        <a href="#" class="btn-nav">Try it Free</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-panel mobile-panel-main is-active" id="mobileMainPanel">
+        <a href="agentic-ai.html" class="mobile-link">Agentic AI</a>
+        <button class="mobile-link mobile-trigger" type="button" data-panel="servicesPanel">
+          Services <span class="mobile-arrow">→</span>
+        </button>
+        <button class="mobile-link mobile-trigger" type="button" data-panel="modulesPanel">
+          Modules <span class="mobile-arrow">→</span>
+        </button>
+        <a href="pricing.html" class="mobile-link">Pricing</a>
+        <button class="mobile-link mobile-trigger" type="button" data-panel="resourcesPanel">
+          Resources <span class="mobile-arrow">→</span>
+        </button>
+        <a href="about.html" class="mobile-link">About us</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
           <a href="#" class="login-link">Login</a>
-          <a href="#" class="btn-nav">Try it Free</a>
-        </div>
-
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
         </div>
       </div>
 
-      <div class="mobile-menu" id="mobileMenu">
-        <div
-          class="mobile-panel mobile-panel-main is-active"
-          id="mobileMainPanel"
-        >
-          <a href="agentic-ai.html" class="mobile-link">Agentic AI</a>
-          <button
-            class="mobile-link mobile-trigger"
-            type="button"
-            data-panel="servicesPanel"
-          >
-            Services <span class="mobile-arrow">→</span>
-          </button>
-          <button
-            class="mobile-link mobile-trigger"
-            type="button"
-            data-panel="modulesPanel"
-          >
-            Modules <span class="mobile-arrow">→</span>
-          </button>
-          <a href="pricing.html" class="mobile-link">Pricing</a>
-          <button
-            class="mobile-link mobile-trigger"
-            type="button"
-            data-panel="resourcesPanel"
-          >
-            Resources <span class="mobile-arrow">→</span>
-          </button>
-          <a href="about.html" class="mobile-link">About us</a>
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
+      <div class="mobile-panel" id="servicesPanel">
+        <div class="mobile-subheader">
+          <button class="mobile-back" type="button" data-back>←</button>
+          <span>Services</span>
         </div>
-
-        <div class="mobile-panel" id="servicesPanel">
-          <div class="mobile-subheader">
-            <button class="mobile-back" type="button" data-back>←</button>
-            <span>Services</span>
-          </div>
-          <a href="services.html" class="mobile-sublink"
-            >Tax Automation &amp; Compliance</a
-          >
-          <a href="erp-pos.html" class="mobile-sublink"
-            >ERP &amp; POS Integrations</a
-          >
-          <a href="ar-reporting.html" class="mobile-sublink"
-            >Audit &amp; Regulatory Reporting</a
-          >
-          <a href="ar-advisory.html" class="mobile-sublink"
-            >Advisory &amp; Risk</a
-          >
-          <a href="regulatory-engagement.html" class="mobile-sublink"
-            >Regulatory Engagement</a
-          >
-          <a href="managed.html" class="mobile-sublink active"
-            >Managed Services</a
-          >
-          <a href="advanced-intelligence.html" class="mobile-sublink"
-            >Advanced Intelligence</a
-          >
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
-        </div>
-
-        <div class="mobile-panel" id="modulesPanel">
-          <div class="mobile-subheader">
-            <button class="mobile-back" type="button" data-back>←</button>
-            <span>Modules</span>
-          </div>
-          <a href="hr.html" class="mobile-sublink"
-            >Human Resources Management</a
-          >
-          <a href="financial-management.html" class="mobile-sublink"
-            >Financial Management</a
-          >
-          <a href="#" class="mobile-sublink">Marketing Automation</a>
-          <a href="tax-management.html" class="mobile-sublink"
-            >Tax Management</a
-          >
-          <a href="project-management.html" class="mobile-sublink"
-            >Project Management</a
-          >
-          <a href="productivity-management.html" class="mobile-sublink"
-            >Productivity Management</a
-          >
-          <a href="sc-management.html" class="mobile-sublink"
-            >Supply Chain Management</a
-          >
-          <a href="custom-modules.html" class="mobile-sublink"
-            >Custom Module Development</a
-          >
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
-        </div>
-
-        <div class="mobile-panel" id="resourcesPanel">
-          <div class="mobile-subheader">
-            <button class="mobile-back" type="button" data-back>←</button>
-            <span>Resources</span>
-          </div>
-          <a href="compliance-calculator.html" class="mobile-sublink"
-            >Compliance Loss Calculator</a
-          >
-          <a href="tax-laws.html" class="mobile-sublink">Tax Laws</a>
-          <a href="tax-calendar.html" class="mobile-sublink">Tax Calendar</a>
-          <a href="state-irs.html" class="mobile-sublink">State IRS</a>
-          <a href="learning.html" class="mobile-sublink">Learning</a>
-          <div class="mobile-actions-wrapper">
-            <a href="#" class="btn-nav full-width">Try it Free</a>
-            <a href="#" class="login-link">Login</a>
-          </div>
+        <a href="services.html" class="mobile-sublink">Tax Automation &amp; Compliance</a>
+        <a href="erp-pos.html" class="mobile-sublink">ERP &amp; POS Integrations</a>
+        <a href="ar-reporting.html" class="mobile-sublink">Audit &amp; Regulatory Reporting</a>
+        <a href="ar-advisory.html" class="mobile-sublink">Advisory &amp; Risk</a>
+        <a href="regulatory-engagement.html" class="mobile-sublink">Regulatory Engagement</a>
+        <a href="managed.html" class="mobile-sublink active">Managed Services</a>
+        <a href="advanced-intelligence.html" class="mobile-sublink">Advanced Intelligence</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
+          <a href="#" class="login-link">Login</a>
         </div>
       </div>
-    </nav>
 
-    <section class="hero-laws">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="breadcrumbs">
-                    <span class="crumb-gray">Resources</span>
-                    <svg class="crumb-arrow" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-                    <span class="crumb-current">Tax Laws</span>
-                </div>
-                <h1>Nigeria's Tax Laws, Simplified for Businesses</h1>
-                <p class="hero-description">
-                    Nigeria's tax system is governed by a set of statutory laws that define 
-                    administration, compliance, enforcement, and revenue collection. This page 
-                    provides a high-level overview of key tax laws enacted in 2025, helping businesses 
-                    understand their scope and relevance.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn-hero-primary">Visit NRS Website</a>
-                </div>
-            </div>
+      <div class="mobile-panel" id="modulesPanel">
+        <div class="mobile-subheader">
+          <button class="mobile-back" type="button" data-back>←</button>
+          <span>Modules</span>
         </div>
-    </section>
-
-    <section class="section-padding bg-white">
-        <div class="container">
-            <div class="equal-height-row">
-                <div class="image-content">
-                    <img src="./assets/tax-law-one.png" alt="Gavel and Law Books">
-                </div>
-                <div class="text-content">
-                    <h2>Why Understanding Tax Laws Is Critical</h2>
-                    <p class="mb-6">Tax laws form the foundation of compliance for businesses operating in Nigeria. They define how taxes are administered, who collects them, how disputes are resolved, and the obligations of taxpayers. Understanding these laws helps organizations:</p>
-                    
-                    <ul class="icon-list-grid">
-                        <li>
-                            <div class="icon-circle-lime">✱</div>
-                            <span>Avoid compliance risks and penalties</span>
-                        </li>
-                        <li>
-                            <div class="icon-circle-lime">✱</div>
-                            <span>Align financial and tax reporting correctly</span>
-                        </li>
-                        <li>
-                            <div class="icon-circle-lime">✱</div>
-                            <span>Prepare for audits and regulatory reviews</span>
-                        </li>
-                        <li>
-                            <div class="icon-circle-lime">✱</div>
-                            <span>Structure operations in line with statutory requirements</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <a href="hr.html" class="mobile-sublink">Human Resources Management</a>
+        <a href="financial-management.html" class="mobile-sublink">Financial Management</a>
+        <a href="#" class="mobile-sublink">Marketing Automation</a>
+        <a href="tax-management.html" class="mobile-sublink">Tax Management</a>
+        <a href="project-management.html" class="mobile-sublink">Project Management</a>
+        <a href="productivity-management.html" class="mobile-sublink">Productivity Management</a>
+        <a href="sc-management.html" class="mobile-sublink">Supply Chain Management</a>
+        <a href="custom-modules.html" class="mobile-sublink">Custom Module Development</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
+          <a href="#" class="login-link">Login</a>
         </div>
-    </section>
+      </div>
 
-    <section class="section-padding bg-cream">
-        <div class="container">
-            <div class="section-header">
-                <h2>Key Tax Laws Enacted in 2025</h2>
-                <p>A comprehensive overview of the statutory framework governing Nigeria's tax system</p>
-            </div>
-
-            <div class="law-card-row">
-                <div class="law-text-col">
-                    <div class="icon-header">
-                        <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
-                        <h3>Nigeria Tax Administration Act, 2025</h3>
-                    </div>
-                    <p>The Nigeria Tax Administration Act, 2025 establishes the procedures and processes for tax administration in Nigeria. It provides clarity on taxpayer obligations, filing requirements, enforcement mechanisms, and dispute resolution processes.</p>
-                    
-                    <ul class="check-grid-law">
-                        <li><span class="check-circle-law">✓</span> Tax registration and compliance procedures</li>
-                        <li><span class="check-circle-law">✓</span> Filing, assessment, and payment timelines</li>
-                        <li><span class="check-circle-law">✓</span> Penalties, audits, and enforcement actions</li>
-                        <li><span class="check-circle-law">✓</span> Taxpayer rights and appeals</li>
-                    </ul>
-                    
-                    <a href="#" class="btn-dark mt-4">Read More</a>
-                </div>
-                <div class="law-img-col">
-                    <img src="./assets/tax-law-two.png" alt="Documents">
-                </div>
-            </div>
-
-            <div class="law-card-row reverse">
-                <div class="law-text-col">
-                    <div class="icon-header">
-                        <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
-                        <h3>Nigeria Revenue Service (Establishment) Act, 2025</h3>
-                    </div>
-                    <p>This Act formally establishes the Nigeria Revenue Service (NRS) as the authority responsible for the assessment, collection, and administration of federally collectible taxes and revenues.</p>
-                    
-                    <ul class="check-grid-law">
-                        <li><span class="check-circle-law">✓</span> Legal mandate and powers of the NRS</li>
-                        <li><span class="check-circle-law">✓</span> Organizational structure and governance</li>
-                        <li><span class="check-circle-law">✓</span> Revenue collection and enforcement authority</li>
-                        <li><span class="check-circle-law">✓</span> Collaboration with other tax bodies</li>
-                    </ul>
-                    
-                    <a href="#" class="btn-dark mt-4">Read More</a>
-                </div>
-                <div class="law-img-col">
-                    <img src="./assets/tax-law-three.png" alt="Bookshelf">
-                </div>
-            </div>
-
-            <div class="law-card-row">
-                <div class="law-text-col">
-                    <div class="icon-header">
-                        <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
-                        <h3>Joint Tax Board (Establishment) Act, 2025</h3>
-                    </div>
-                    <p>The Joint Tax Board (JTB) Act defines the framework for coordination between federal and state tax authorities, ensuring consistency and cooperation across Nigeria's tax system.</p>
-                    
-                    <ul class="check-grid-law">
-                        <li><span class="check-circle-law">✓</span> Harmonization of tax administration practices</li>
-                        <li><span class="check-circle-law">✓</span> Coordination between federal and state tax agencies</li>
-                        <li><span class="check-circle-law">✓</span> Advisory and policy-alignment responsibilities</li>
-                        <li><span class="check-circle-law">✓</span> Inter-governmental tax collaboration</li>
-                    </ul>
-                    
-                    <a href="#" class="btn-dark mt-4">Read More</a>
-                </div>
-                <div class="law-img-col">
-                    <img src="./assets/tax-law-four.png" alt="Gavel on Table">
-                </div>
-            </div>
-
-            <div class="law-card-row reverse">
-                <div class="law-text-col">
-                    <div class="icon-header">
-                        <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
-                        <h3>Nigeria Tax Act, 2025</h3>
-                    </div>
-                    <p>The Nigeria Tax Act, 2025 provides the overarching legal framework governing taxation in Nigeria. It consolidates key tax principles and defines the scope, application, and structure of taxes applicable within the country.</p>
-                    
-                    <ul class="check-grid-law">
-                        <li><span class="check-circle-law">✓</span> General tax principles and definitions</li>
-                        <li><span class="check-circle-law">✓</span> Types of taxes and applicable bases</li>
-                        <li><span class="check-circle-law">✓</span> Compliance obligations for individuals and businesses</li>
-                        <li><span class="check-circle-law">✓</span> Statutory interpretation of tax provisions</li>
-                    </ul>
-                    
-                    <a href="#" class="btn-dark mt-4">Read More</a>
-                </div>
-                <div class="law-img-col">
-                    <img src="./assets/tax-law-five.png" alt="Gavel on dark background">
-                </div>
-            </div>
-
+      <div class="mobile-panel" id="resourcesPanel">
+        <div class="mobile-subheader">
+          <button class="mobile-back" type="button" data-back>←</button>
+          <span>Resources</span>
         </div>
-    </section>
-
-    <section class="section-padding bg-white">
-        <div class="container">
-            <div class="cta-banner">
-                <h2>Turn Tax Compliance into a Structured, Automated Process</h2>
-                <p>Understanding tax laws is only the first step. Managing compliance, reporting, and regulatory changes manually can be complex and time-consuming.</p>
-                <div class="cta-actions">
-                    <a href="#" class="btn-dark">Contact Us</a>
-                </div>
-            </div>
+        <a href="compliance-calculator.html" class="mobile-sublink">Compliance Loss Calculator</a>
+        <a href="tax-laws.html" class="mobile-sublink">Tax Laws</a>
+        <a href="tax-calendar.html" class="mobile-sublink">Tax Calendar</a>
+        <a href="state-irs.html" class="mobile-sublink">State IRS</a>
+        <a href="learning.html" class="mobile-sublink">Learning</a>
+        <div class="mobile-actions-wrapper">
+          <a href="#" class="btn-nav full-width">Try it Free</a>
+          <a href="#" class="login-link">Login</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </nav>
 
-    <footer class="footer-section">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-brand">
-            <a href="index.html" class="logo">
-              <img src="./assets/brand-logo.png" alt="brand-logo" />
-            </a>
-            <p class="tagline">Smart. Secure. Simplified.</p>
-            <div class="contact-details">
-              <p>
-                <strong>USA Customer Support:</strong><br />(+1) 256 441 3090
-              </p>
-              <p>
-                <strong>NGA Customer Support:</strong><br />(+234) 907 713 7167
-              </p>
-              <p><strong>Email:</strong><br />support@workmerate.ng.com</p>
-            </div>
-            <div class="footer-socials" aria-label="Social links">
-              <a href="#" class="social-icon" aria-label="Facebook">f</a>
-              <a href="#" class="social-icon" aria-label="X">x</a>
-              <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
-              <a href="#" class="social-icon" aria-label="Instagram">ig</a>
-              <a href="#" class="social-icon" aria-label="TikTok">t</a>
-            </div>
+  <section class="hero-laws">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="breadcrumbs">
+          <span class="crumb-gray">Resources</span>
+          <svg class="crumb-arrow" viewBox="0 0 24 24">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          </svg>
+          <span class="crumb-current">Tax Laws</span>
+        </div>
+        <h1>Nigeria's Tax Laws, Simplified for Businesses</h1>
+        <p class="hero-description">
+          Nigeria's tax system is governed by a set of statutory laws that define
+          administration, compliance, enforcement, and revenue collection. This page
+          provides a high-level overview of key tax laws enacted in 2025, helping businesses
+          understand their scope and relevance.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-hero-primary">Visit NRS Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="equal-height-row">
+        <div class="image-content">
+          <img src="./assets/tax-law-one.png" alt="Gavel and Law Books">
+        </div>
+        <div class="text-content">
+          <h2>Why Understanding Tax Laws Is Critical</h2>
+          <p class="mb-6">Tax laws form the foundation of compliance for businesses operating in Nigeria. They define
+            how taxes are administered, who collects them, how disputes are resolved, and the obligations of taxpayers.
+            Understanding these laws helps organizations:</p>
+
+          <ul class="icon-list-grid">
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-asterisk-icon lucide-asterisk">
+                    <path d="M12 6v12" />
+                    <path d="M17.196 9 6.804 15" />
+                    <path d="m6.804 9 10.392 6" />
+                  </svg>
+                </div>
+              </div>
+              <span>Avoid compliance risks and penalties</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-asterisk-icon lucide-asterisk">
+                    <path d="M12 6v12" />
+                    <path d="M17.196 9 6.804 15" />
+                    <path d="m6.804 9 10.392 6" />
+                  </svg>
+                </div>
+              </div>
+              <span>Align financial and tax reporting correctly</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-asterisk-icon lucide-asterisk">
+                    <path d="M12 6v12" />
+                    <path d="M17.196 9 6.804 15" />
+                    <path d="m6.804 9 10.392 6" />
+                  </svg>
+                </div>
+              </div>
+              <span>Prepare for audits and regulatory reviews</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-asterisk-icon lucide-asterisk">
+                    <path d="M12 6v12" />
+                    <path d="M17.196 9 6.804 15" />
+                    <path d="m6.804 9 10.392 6" />
+                  </svg>
+                </div>
+              </div>
+              <span>Structure operations in line with statutory requirements</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Key Tax Laws Enacted in 2025</h2>
+        <p>A comprehensive overview of the statutory framework governing Nigeria's tax system</p>
+      </div>
+
+      <div class="law-card-row">
+        <div class="law-text-col">
+          <div class="icon-header">
+            <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg></div>
+            <h3>Nigeria Tax Administration Act, 2025</h3>
           </div>
-          <div class="footer-links-grid">
-            <div>
-              <h4>Services</h4>
-              <ul>
-                <li><a href="services.html">Tax Automation</a></li>
-                <li><a href="erp-pos.html">ERP Integration</a></li>
-                <li><a href="ar-reporting.html">Regulatory Reporting</a></li>
-                <li><a href="ar-advisory.html">Advisory &amp; Strategy</a></li>
-                <li>
-                  <a href="regulatory-engagement.html">Regulatory Engagement</a>
-                </li>
-                <li><a href="agentic-ai.html">Agentic AI</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Modules</h4>
-              <ul>
-                <li><a href="hr.html">Human Resources</a></li>
-                <li>
-                  <a href="financial-management.html">Financial Management</a>
-                </li>
-                <li><a href="tax-management.html">Tax Management</a></li>
-                <li><a href="#">Marketing Automation</a></li>
-                <li>
-                  <a href="project-management.html">Project Management</a>
-                </li>
-                <li><a href="productivity-management.html">Productivity</a></li>
-                <li><a href="sc-management.html">Supply Chain</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Resources</h4>
-              <ul>
-                <li>
-                  <a href="compliance-calculator.html"
-                    >Compliance Loss Calculator</a
-                  >
-                </li>
-                <li><a href="state-irs.html">State IRS</a></li>
-                <li><a href="tax-laws.html">Tax Laws</a></li>
-                <li><a href="tax-calendar.html">Tax Calendar</a></li>
-                <li><a href="learning.html">Learning</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Other Links</h4>
-              <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li>
-                  <a href="terms-and-condition.html">Terms and Conditions</a>
-                </li>
-                <li><a href="cookie-policy.html">Cookies Policy</a></li>
-              </ul>
-            </div>
-          </div>
+          <p>The Nigeria Tax Administration Act, 2025 establishes the procedures and processes for tax administration in
+            Nigeria. It provides clarity on taxpayer obligations, filing requirements, enforcement mechanisms, and
+            dispute resolution processes.</p>
+
+          <ul class="icon-list-grid">
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Tax registration and compliance procedures</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Filing, assessment, and payment timelines</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Penalties, audits, and enforcement actions</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Taxpayer rights and appeals</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-dark mt-4">Read More</a>
         </div>
-        <hr />
-        <div class="footer-newsletter">
-          <div class="nl-header">
-            <h2>Subscribe to our newsletter</h2>
+        <div class="law-img-col">
+          <img src="./assets/tax-law-two.png" alt="Documents">
+        </div>
+      </div>
+
+      <div class="law-card-row reverse">
+        <div class="law-text-col">
+          <div class="icon-header">
+            <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg></div>
+            <h3>Nigeria Revenue Service (Establishment) Act, 2025</h3>
           </div>
-          <div class="nl-text">
+          <p>This Act formally establishes the Nigeria Revenue Service (NRS) as the authority responsible for the
+            assessment, collection, and administration of federally collectible taxes and revenues.</p>
+
+          <ul class="icon-list-grid">
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Legal mandate and powers of the NRS</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Filing, assessment, and payment timelines</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Penalties, audits, and enforcement actions</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Taxpayer rights and appeals</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-dark mt-4">Read More</a>
+        </div>
+        <div class="law-img-col">
+          <img src="./assets/tax-law-three.png" alt="Bookshelf">
+        </div>
+      </div>
+
+      <div class="law-card-row">
+        <div class="law-text-col">
+          <div class="icon-header">
+            <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg></div>
+            <h3>Joint Tax Board (Establishment) Act, 2025</h3>
+          </div>
+          <p>The Joint Tax Board (JTB) Act defines the framework for coordination between federal and state tax
+            authorities, ensuring consistency and cooperation across Nigeria's tax system.</p>
+
+          <ul class="icon-list-grid">
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Harmonization of tax administration practices</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Coordination between federal and state tax agencies</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Advisory and policy-alignment responsibilities</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Inter-governmental tax collaboration</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-dark mt-4">Read More</a>
+        </div>
+        <div class="law-img-col">
+          <img src="./assets/tax-law-four.png" alt="Gavel on Table">
+        </div>
+      </div>
+
+      <div class="law-card-row reverse">
+        <div class="law-text-col">
+          <div class="icon-header">
+            <div class="icon-box-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg></div>
+            <h3>Nigeria Tax Act, 2025</h3>
+          </div>
+          <p>The Nigeria Tax Act, 2025 provides the overarching legal framework governing taxation in Nigeria. It
+            consolidates key tax principles and defines the scope, application, and structure of taxes applicable within
+            the country.</p>
+
+          <ul class="icon-list-grid">
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>General tax principles and definitions</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Types of taxes and applicable bases</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Compliance obligations for individuals and businesses</span>
+            </li>
+            <li>
+              <div class="icon-circle-lime">
+                <div class="icon-circle-inner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-check-icon lucide-check">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </div>
+              </div>
+              <span>Statutory interpretation of tax provisions</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-dark mt-4">Read More</a>
+        </div>
+        <div class="law-img-col">
+          <img src="./assets/tax-law-five.png" alt="Gavel on dark background">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Turn Tax Compliance into a Structured, Automated Process</h2>
+        <p>Understanding tax laws is only the first step. Managing compliance, reporting, and regulatory changes
+          manually can be complex and time-consuming.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn-dark">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="./assets/brand-logo.png" alt="brand-logo" />
+          </a>
+          <p class="tagline">Smart. Secure. Simplified.</p>
+          <div class="contact-details">
             <p>
-              Stay informed with the latest news, updates, and resources from
-              WorkMerate, sent directly to your inbox.
+              <strong>USA Customer Support:</strong><br />(+1) 256 441 3090
             </p>
+            <p>
+              <strong>NGA Customer Support:</strong><br />(+234) 907 713 7167
+            </p>
+            <p><strong>Email:</strong><br />support@workmerate.ng.com</p>
           </div>
-          <div class="nl-form">
-            <input type="email" placeholder="Enter your email" />
-            <button class="btn-dark">Subscribe</button>
+          <div class="footer-socials" aria-label="Social links">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="X">x</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+            <a href="#" class="social-icon" aria-label="TikTok">t</a>
           </div>
         </div>
-        <hr />
-        <div class="footer-bottom">
-          <div class="badges">
-            <p>&copy; 2025 WorkMerate - All rights reserved</p>
-            <div class="brand-logos">
-              <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
-              <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
-              <img src="./assets/brands/occu-health-safety.png" alt="Occupational Health Safety" />
-              <img src="./assets/brands/info-security-manage.png" alt="Information Security Management" />
-              <img src="./assets/brands/NDPC-Nigeria.png" alt="NCPC Nigeria" />
-              <img src="./assets/brands/NITDA.png" alt="National Information Technology Agency" />
-            </div>
+        <div class="footer-links-grid">
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Tax Automation</a></li>
+              <li><a href="erp-pos.html">ERP Integration</a></li>
+              <li><a href="ar-reporting.html">Regulatory Reporting</a></li>
+              <li><a href="ar-advisory.html">Advisory &amp; Strategy</a></li>
+              <li>
+                <a href="regulatory-engagement.html">Regulatory Engagement</a>
+              </li>
+              <li><a href="agentic-ai.html">Agentic AI</a></li>
+            </ul>
           </div>
-          <div class="ai-logo">
-            <img src="./assets/brands/chat-ai.png" alt="">
+          <div>
+            <h4>Modules</h4>
+            <ul>
+              <li><a href="hr.html">Human Resources</a></li>
+              <li>
+                <a href="financial-management.html">Financial Management</a>
+              </li>
+              <li><a href="tax-management.html">Tax Management</a></li>
+              <li><a href="#">Marketing Automation</a></li>
+              <li>
+                <a href="project-management.html">Project Management</a>
+              </li>
+              <li><a href="productivity-management.html">Productivity</a></li>
+              <li><a href="sc-management.html">Supply Chain</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li>
+                <a href="compliance-calculator.html">Compliance Loss Calculator</a>
+              </li>
+              <li><a href="state-irs.html">State IRS</a></li>
+              <li><a href="tax-laws.html">Tax Laws</a></li>
+              <li><a href="tax-calendar.html">Tax Calendar</a></li>
+              <li><a href="learning.html">Learning</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Other Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li>
+                <a href="terms-and-condition.html">Terms and Conditions</a>
+              </li>
+              <li><a href="cookie-policy.html">Cookies Policy</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
+      <hr />
+      <div class="footer-newsletter">
+        <div class="nl-header">
+          <h2>Subscribe to our newsletter</h2>
+        </div>
+        <div class="nl-text">
+          <p>
+            Stay informed with the latest news, updates, and resources from
+            WorkMerate, sent directly to your inbox.
+          </p>
+        </div>
+        <div class="nl-form">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn-dark">Subscribe</button>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="badges">
+          <p>&copy; 2025 WorkMerate - All rights reserved</p>
+          <div class="brand-logos">
+            <img src="./assets/brands/quality-assurance.png" alt="Quality Assurance" />
+            <img src="./assets/brands/environmental-management.png" alt="Environmental Management" />
+            <img src="./assets/brands/occu-health-safety.png" alt="Occupational Health Safety" />
+            <img src="./assets/brands/info-security-manage.png" alt="Information Security Management" />
+            <img src="./assets/brands/NDPC-Nigeria.png" alt="NCPC Nigeria" />
+            <img src="./assets/brands/NITDA.png" alt="National Information Technology Agency" />
+          </div>
+        </div>
+        <div class="ai-logo">
+          <img src="./assets/brands/chat-ai.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    
 
-<script>
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
 
-  const mobilePanels = document.querySelectorAll(".mobile-panel");
-  const mobileMainPanel = document.getElementById("mobileMainPanel");
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-  const setActivePanel = (panelId) => {
-    mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
-    const nextPanel = document.getElementById(panelId);
-    (nextPanel || mobileMainPanel).classList.add("is-active");
-  };
+    const mobilePanels = document.querySelectorAll(".mobile-panel");
+    const mobileMainPanel = document.getElementById("mobileMainPanel");
 
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      mobileMenu.classList.toggle("open");
-      if (!mobileMenu.classList.contains("open")) {
+    const setActivePanel = (panelId) => {
+      mobilePanels.forEach((panel) => panel.classList.remove("is-active"));
+      const nextPanel = document.getElementById(panelId);
+      (nextPanel || mobileMainPanel).classList.add("is-active");
+    };
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("open");
+        if (!mobileMenu.classList.contains("open")) {
+          setActivePanel("mobileMainPanel");
+        }
+      });
+    }
+
+    document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        setActivePanel(trigger.dataset.panel);
+      });
+    });
+
+    document.querySelectorAll("[data-back]").forEach((btn) => {
+      btn.addEventListener("click", () => {
         setActivePanel("mobileMainPanel");
-      }
+      });
     });
-  }
-
-  document.querySelectorAll(".mobile-trigger").forEach((trigger) => {
-    trigger.addEventListener("click", () => {
-      setActivePanel(trigger.dataset.panel);
-    });
-  });
-
-  document.querySelectorAll("[data-back]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      setActivePanel("mobileMainPanel");
-    });
-  });
-</script>
+  </script>
 </body>
+
 </html>
-
-
