@@ -6,8 +6,8 @@
   --color-dark-green: #4f6f2f;
   --color-darker-green: #384e20;
   --color-cream-bg: #f0f2eb;
-  --color-yellow-bg: #eff69e;
-  --color-yellow-icon: #ebf2af;
+  --color-yellow-bg: #E8EC67;
+  --color-yellow-icon: #E8EC67;
 }
 
 * {
@@ -42,7 +42,7 @@ img {
 .container {
   /* max-width: 1240px; */
   margin: 0 0;
-  padding: 96px 96px;
+  padding: 64px 96px;
   align-items: center;
 }
 
@@ -255,7 +255,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  border-top: 0.4px solid #000;
+  border-top: 0.4px solid #E3E3E3;
 }
 
 .mv-card {

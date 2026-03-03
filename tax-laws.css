@@ -354,7 +354,7 @@ img {
 .section-header {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 60px;
+  margin: 0 auto 32px;
 }
 
 .section-header h2 {
@@ -378,7 +378,7 @@ img {
   border-radius: 12px;
   overflow: hidden;
   /* For image corners */
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
@@ -393,7 +393,7 @@ img {
 }
 
 .law-text-col {
-  padding: 40px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -648,5 +648,250 @@ img {
   .nl-form input {
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    color: #121212;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -2px;
+    margin-bottom: 12px;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 0px;
+  }
+
+  .section-padding {
+    padding: 24px 0;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+
+  .cta-banner {
+    padding: 32px;
+  }
+
+  .cta-banner h2 {
+    color: #121212;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -1px;
+  }
+
+  .cta-banner p {
+    width: 100%;
+    color: #121212;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin: 0 auto 24px;
+  }
+
+  .btn-dark {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .law-card-row,
+  .law-card-row.reverse {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0;
+    gap: 24px;
+    direction: ltr;
+  }
+
+  .law-card-row.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .law-text-col {
+    padding: 16px;
+  }
+
+  .icon-list-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+  }
+
+  .icon-list-grid li {
+    gap: 12px;
+  }
+
+  .icon-list-grid li span {
+    color: #121212;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .icon-circle-lime {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+
+  .icon-circle-inner {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+  }
+
+  .icon-circle-inner svg {
+    width: 12px;
+    height: 12px;
+    color: #E8EC67;
+  }
+
+  .law-text-col p {
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+  }
+
+  .icon-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .icon-box-dark {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  }
+
+
+  .law-text-col h3 {
+    color: #121212;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  .section-header p {
+    color: #5F5C64;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+
+  .section-header h2 {
+    color: #121212;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  .equal-height-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .image-content {
+    width: 100%;
+  }
+
+  .text-content p {
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  .text-content h2 {
+    color: #121212;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-laws {
+    padding: 42px 0;
+  }
+
+  .hero-content {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-content h1 {
+    color: #121212;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -2px;
+    margin-bottom: 0px;
+  }
+
+  .hero-description {
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  .btn-hero-primary {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 20px;
   }
 }

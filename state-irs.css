@@ -390,8 +390,7 @@ h1 {
 .tab-btn {
   padding: 10px 24px;
   background: #fff;
-  border: none !important;
-  outline: none !important;
+  border: none;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -413,8 +412,7 @@ h1 {
 .tab-btn.active {
   background: var(--color-darker-green);
   color: #F0F299 !important;
-  border: none !important;
-  outline: none !important;
+  border-color: var(--color-darker-green);
 }
 
 /* Tab Content Visibility Logic */
@@ -695,27 +693,335 @@ h1 {
   }
 }
 
-/* Mobile: make the region tabs horizontally scrollable to prevent overflow */
-@media screen and (max-width: 768px) {
-  .irs-tabs {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-    gap: 12px;
-    padding-bottom: 6px;
-    /* ensure touch area */
-  }
 
-  .irs-tabs .tab-btn {
-    display: inline-block;
-    white-space: nowrap;
-    margin-right: 8px;
-  }
-}
+
+/* Mobile Screens */
 
 @media (max-width: 600px) {
+
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .cta-banner {
+    border-radius: 16px;
+    padding: 32px 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .cta-banner h2 {
+    color: #121212;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -1px;
+  }
+
+
+  .cta-banner p {
+    width: 100%;
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+
+  .btn-dark {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 8px;
+  }
+
+  .section-padding {
+    padding: 24px 0px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  .feature-card-clean {
+    border-radius: 16px;
+    border: 0.4px solid #4A6117;
+    padding: 24px;
+  }
+
+  .icon-box-dark {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+  }
+
+
+  .icon-box-dark svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  .feature-card-clean h3 {
+    color: #121212;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+
+  .sites-header p {
+    color: #5F5C64;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  .sites-header h2 {
+    color: #121212;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+
   .irs-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+    height: 689px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .irs-grid::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .irs-logo img {
+    margin-bottom: 12px;
+  }
+
+  .irs-card {
+    border-radius: 16px;
+  }
+
+  .irs-card h3 {
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-bottom: 8px;
+  }
+
+  .irs-card p strong {
+    color: #121212;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+
+  .irs-card p {
+    color: #5F5C64;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  .btn-outline {
+    padding: 8px 0px;
+    border-radius: 8px;
+    border: 1px solid #4A6117;
+    color: #4A6117;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .irs-tabs {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    white-space: nowrap;
+    gap: 0px;
+    padding: 8px;
+    margin: 0 auto 32px;
+    justify-content: flex-start;
+  }
+
+  .tab-btn {
+    margin-right: 0px;
+    flex-shrink: 0;
+  }
+
+  .irs-header h2 {
+    color: #121212;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .equal-height-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .image-content {
+    width: 100%;
+  }
+
+  .hero-irs {
+    background: url(./assets/green-lime-half-bg.png) no-repeat center / cover;
+    position: relative;
+    padding: 42px 0;
+    overflow: hidden;
+  }
+
+
+  .hero-content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .btn-hero-primary {
+    padding: 12px 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    margin-top: 20px;
+  }
+
+
+  .hero-description {
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    color: #121212;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -2px;
+  }
+
+
+  .icon-list-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0px;
+  }
+
+
+  .icon-list-grid li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #121212;
+  }
+
+  .icon-list-grid li span {
+    color: #121212;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .icon-circle-lime {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+
+  .icon-circle-inner {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+  }
+
+  .icon-circle-inner svg {
+    width: 12px;
+    height: 12px;
+  }
+
+
+  .text-content p {
+    color: #121212;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+  }
+
+
+  .text-content h2 {
+    color: #121212;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
   }
 
   .hero-buttons .btn-hero-primary {
