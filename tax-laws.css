@@ -1,14 +1,15 @@
 /* --- Reset & Variables --- */
 :root {
   --font-family: "Inter", sans-serif;
-  --color-text-main: #111;
-  --color-text-light: #555;
-  --color-dark-green: #4f6f2f;
+  --color-text-main: #121212;
+  --color-text-light: #5F5C64;
+  --color-dark-green: #4A6117;
+  --color-darker-green: #4A6117;
   --color-lime-accent: #dcee60;
-  --color-cream-bg: #f9f9f4;
+  --color-cream-bg: #EDEFE8;
   --color-peach-bg: #fcefe9;
   --color-lines: #d97e4a;
-  --color-yellow-cta: #eff69e;
+  --color-yellow-cta: #E8EC67;
   --color-border: #eeeeee;
 }
 

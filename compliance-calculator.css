@@ -1,14 +1,14 @@
 /* --- Reset & Variables --- */
 :root {
   --font-family: "Inter", sans-serif;
-  --color-text-main: #111;
-  --color-text-light: #555;
-  --color-dark-green: #4f6f2f;
-  --color-darker-green: #384e20;
-  --color-lime-accent: #dcee60;
-  --color-yellow-bg: #ebf2af;
+  --color-text-main: #121212;
+  --color-text-light: #5F5C64;
+  --color-dark-green: #4A6117;
+  --color-darker-green: #4A6117;
+  --color-lime-accent: #E8EC67;
+  --color-yellow-bg: #E8EC67;
   /* The light yellow header color */
-  --color-cream-bg: #f9f9f4;
+  --color-cream-bg: #EDEFE8;
   --color-border: #e0e0e0;
 }
 
@@ -587,6 +587,18 @@ h1 {
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0;
+  }
+
+  .calculator-hero {
+    padding: 42px 0 0;
+  }
+
+  .container {
+    padding: 0 0;
+  }
+
+  .calc-text {
+    padding: 0 24px;
   }
 
   .calc-card {
